@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import CalculatePercentage from "./CalculatePercentage.css";
 
-function TipPercentage({ billAmount, onTipChange }) {
+const TipPercentage = ({ billAmount, onTipChange }) => {
   const [tipPercent, setTipPercent] = useState(null);
 
   // the custom tip percentage has to be handled saparately
@@ -48,7 +49,9 @@ function TipPercentage({ billAmount, onTipChange }) {
           <button
             key={percentage.label}
             onClick={() => handleTips(percentage.value)}
-            className={tipPercent === percentage.value ? "active" : ""}
+            className={`tip-button ${
+              tipPercent === percentage.value ? "active" : ""
+            }`}
           >
             {percentage.label}
           </button>
@@ -65,6 +68,6 @@ function TipPercentage({ billAmount, onTipChange }) {
       </div>
     </div>
   );
-}
+};
 
 export default TipPercentage;
