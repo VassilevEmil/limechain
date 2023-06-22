@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import InsertBill from "./Components/BillField/InsertBill";
+import CalculatePercentage from "./Components/CalculatePercentage/CalculatePercentage";
+import NumberOfPpl from "./Components/NumberOfPpl/NumberOfPpl";
 
 function App() {
+  const [billAmount, setBillAmount] = useState(0);
+  const [tipAmount, setTipAmount] = useState(0);
+  const [numberOfPpl, setNumberOfPpl] = useState(0);
+
+  const handleBillChange = (amount) => {
+    setBillAmount(parseFloat(amount));
+  };
+
+  const handleTipChange = (amount) => {
+    setTipAmount(amount);
+  };
+
+  const handlePeopleChange = (amount) => {
+    setNumberOfPpl(amount);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <InsertBill onBillChange={handleBillChange} />
+      <CalculatePercentage
+        billAmount={billAmount}
+        onTipChange={handleTipChange}
+      />
+
+      <p>Total Tip: ${tipAmount.toFixed(2)}</p>
+      <NumberOfPpl
+        numberOfPpl={numberOfPpl}
+        onPeopleChange={handlePeopleChange}
+      />
+
+      {/* Other components and calculations */}
     </div>
   );
 }
