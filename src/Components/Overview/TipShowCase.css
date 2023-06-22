@@ -1,0 +1,9 @@
+.tips-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tips-list__fallback {
+    color: white;
+    text-align: center;
+  }
