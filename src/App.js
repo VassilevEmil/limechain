@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Wrapper from "./Components/wrapper";
+import Wrapper from "./Components/wrapper.js";
 
 function App() {
   return (
