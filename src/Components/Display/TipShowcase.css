@@ -1,9 +1,19 @@
-.tips-list {
-    list-style: none;
-    padding: 0;
+.tip-display {
+    background-color: #37474f; /* Dark grayish cyan for the background */
+    color: #b2dfdb; /* Light grayish cyan for text */
+    padding: 20px;
+    margin-top: 20px;
   }
   
-  .tips-list__fallback {
-    color: white;
-    text-align: center;
+  .tip-display p {
+    font-weight: bold;
+  }
+  
+  .reset-button {
+    background-color: #b2dfdb; /* Light grayish cyan for the reset button */
+    color: #37474f; /* Dark grayish cyan for the reset button text */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
   }

@@ -1,0 +1,30 @@
+.insert-bill-wrapper {
+    background-color: #37474f; /* Dark grayish cyan for the wrapper */
+    color: #b2dfdb; /* Light grayish cyan for text */
+    padding: 20px;
+  }
+  
+  .insert-bill-label {
+    margin-bottom: 10px;
+  }
+  
+  .insert-bill-input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .insert-bill-addon {
+    background-color: #b2dfdb; /* Light grayish cyan for the addon background */
+    color: #37474f; /* Dark grayish cyan for the addon text */
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .insert-bill-input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }

@@ -1,14 +1,17 @@
 import React, { useState } from "react";
+import "./TipShowCase.css";
 
-const TipShowcase = ({ tipPerPerson, totalTip, onReset }) => {
+const TipShowCase = ({ tipPerPerson, totalTip, onReset }) => {
   return (
-    <div>
+    <div className="tip-display">
       <h3>Tip Amount</h3>
       <p>Tip per Person: ${tipPerPerson.toFixed(2)}</p>
       <p>Total Tip: ${totalTip.toFixed(2)}</p>
-      <button onClick={onReset}>Reset</button>
+      <button className="reset-button" onClick={onReset}>
+        Reset
+      </button>
     </div>
   );
 };
 
-export default TipShowcase;
+export default TipShowCase;

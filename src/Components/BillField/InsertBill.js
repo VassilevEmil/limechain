@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./InsertBill.css";
 
 // function component to insert bill details in a form and pass it as prop for further use
 
@@ -14,17 +15,16 @@ function InsertBill({ onBillChange }) {
   };
 
   return (
-    <div>
-      <p>Bill</p>
-      <label>Bill Amount:</label>
-      <div className="input-group">
-        <span className="input-group-addon">$</span>
+    <div className="insert-bill-wrapper">
+      <p className="insert-bill-label">Bill</p>
+      <div className="insert-bill-input-group">
+        <span className="insert-bill-addon">$</span>
         <input
           type="number"
           id="billAmount"
           value={billAmount}
           onChange={handleBillChange}
-          className="form-control"
+          className="insert-bill-input"
         />
       </div>
     </div>

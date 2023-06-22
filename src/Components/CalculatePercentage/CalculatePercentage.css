@@ -1,0 +1,32 @@
+.tip-button {
+    background-color: #37474f; /* Dark grayish cyan */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .tip-button:hover {
+    background-color: #b2dfdb; /* Light grayish cyan on hover */
+  }
+
+  .custom-tip {
+    margin-top: 20px;
+  }
+  
+  .custom-tip input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .custom-tip button {
+    background-color: #b2dfdb; /* Light grayish cyan for the button */
+    color: #37474f; /* Dark grayish cyan for the button text */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
