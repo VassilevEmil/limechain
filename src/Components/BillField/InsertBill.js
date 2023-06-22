@@ -5,13 +5,19 @@ import "./InsertBill.css";
 
 function InsertBill({ onBillChange }) {
   const [billAmount, setBillAmount] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   // handling the input value changes using props
 
   const handleBillChange = (e) => {
     const amount = e.target.value;
     setBillAmount(amount);
-    onBillChange(amount);
+    if (amount < 0) {
+      setErrorMessage("Bill amount cannot be negative.");
+    } else {
+      setErrorMessage("");
+      onBillChange(amount);
+    }
   };
 
   return (
@@ -27,6 +33,7 @@ function InsertBill({ onBillChange }) {
           className="insert-bill-input"
         />
       </div>
+      {errorMessage && <p className="error">{errorMessage}</p>}
     </div>
   );
 }
