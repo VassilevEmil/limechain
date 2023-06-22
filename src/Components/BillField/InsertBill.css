@@ -1,6 +1,6 @@
 .insert-bill-wrapper {
-    background-color: #37474f; /* Dark grayish cyan for the wrapper */
-    color: #b2dfdb; /* Light grayish cyan for text */
+    background-color: #37474f; 
+    color: #b2dfdb; 
     padding: 20px;
   }
   
@@ -14,8 +14,8 @@
   }
   
   .insert-bill-addon {
-    background-color: #b2dfdb; /* Light grayish cyan for the addon background */
-    color: #37474f; /* Dark grayish cyan for the addon text */
+    background-color: #b2dfdb; 
+    color: #37474f; 
     padding: 5px 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -27,4 +27,10 @@
     padding: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+
+  @media (max-width: 480px) {
+    .insert-bill-wrapper {
+      max-width: 320px; 
+    }
   }
