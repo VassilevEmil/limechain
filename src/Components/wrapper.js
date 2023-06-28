@@ -4,6 +4,8 @@ import TipPercentage from "./CalculatePercentage/CalculatePercentage";
 import NumberOfPpl from "./NumberOfPpl/NumberOfPpl";
 import TipShowCase from "./Display/TipShowCase";
 
+// renaming the file
+
 const Wrapper = () => {
   const [billAmount, setBillAmount] = useState(0);
   const [tipAmount, setTipAmount] = useState(0);
