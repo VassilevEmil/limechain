@@ -6,7 +6,7 @@ import TipShowCase from "./Display/TipShowCase";
 
 // renaming the file
 // will add some unusable code so i can commit to github and save the changes
-// test
+// test1
 
 const Wrapper = () => {
   const [billAmount, setBillAmount] = useState(0);
