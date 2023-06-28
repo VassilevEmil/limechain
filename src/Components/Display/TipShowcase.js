@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TipShowCase.css";
 
-// renaming the file so i can push
+// renaming the file so i can pushhh
 
 const TipShowCase = ({ tipPerPerson, totalTip, onReset }) => {
   return (
