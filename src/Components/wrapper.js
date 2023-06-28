@@ -5,11 +5,16 @@ import NumberOfPpl from "./NumberOfPpl/NumberOfPpl";
 import TipShowCase from "./Display/TipShowCase";
 
 // renaming the file
+// will add some unusable code so i can commit to github and save the changes
 
 const Wrapper = () => {
   const [billAmount, setBillAmount] = useState(0);
   const [tipAmount, setTipAmount] = useState(0);
   const [numberOfPpl, setNumberOfPpl] = useState(0);
+
+  // dummy code which is not going to be used
+
+  const [test, setTest] = useState(null);
 
   const handleBillChange = (amount) => {
     setBillAmount(parseFloat(amount));
