@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./TipShowCase.css";
 
+// comment
+
 const TipShowCase = ({ tipPerPerson, totalTip, onReset }) => {
   return (
     <div className="tip-display">
